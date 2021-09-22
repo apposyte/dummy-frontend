@@ -1,6 +1,7 @@
 # Source: https://github.com/github/gitignore/blob/master/Node.gitignore
 
 .idea/
+package-lock.json
 
 # Logs
 logs
