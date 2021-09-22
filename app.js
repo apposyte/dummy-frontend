@@ -7,7 +7,7 @@ const http = require("http");
 const auth = require("http-auth");
 const basic = auth.basic({
     realm: "test-ls-user",
-    file: __dirname + "/../data/users.htpasswd" // gevorg:gpass, Sarah:testpass
+    file: __dirname + "/../data/htpasswd" // gevorg:gpass, Sarah:testpass
 });
 
 const uri = "http://localhost:5000";
