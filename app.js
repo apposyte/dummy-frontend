@@ -10,7 +10,7 @@ const basic = auth.basic({
     file: __dirname + "/../data/htpasswd" // gevorg:gpass, Sarah:testpass
 });
 
-const uri = "http://localhost:5000";
+const uri = "http:/<IP>:3000";
 
 http
     .createServer(basic.check(function (request, response) {
@@ -20,4 +20,4 @@ http
         });
         request.pipe(proxy);
     }))
-    .listen(3000);
+    .listen(80);
